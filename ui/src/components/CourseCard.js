@@ -22,8 +22,10 @@ const CourseCard = ({ course, isSubscribed, onSubscribe, onUnsubscribe }) => {
 
   const formatDuration = (duration) => {
     const date = new Date(duration);
+    const day = date.getDate();
     const hours = date.getHours();
-    return `${hours} hours`;
+    const totalHours = (day - 1) * 24 + hours;
+    return `${totalHours} hours`;
   };
 
   return (
@@ -82,7 +84,7 @@ const CourseCard = ({ course, isSubscribed, onSubscribe, onUnsubscribe }) => {
           className={`w-full py-2 font-semibold rounded-lg transition-colors ${
             isSubscribed
               ? "bg-red-100 text-red-500 hover:bg-red-200"
-              : "bg-blue-100 text-blue-700 hover:bg-blue-200"
+              : "bg-blue-100 text-blue-500 hover:bg-blue-200"
           }`}
         >
           {isSubscribed ? "Unsubscribe" : "Subscribe"}

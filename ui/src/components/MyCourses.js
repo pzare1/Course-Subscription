@@ -17,7 +17,6 @@ const MyCourses = ({ courses, onUnsubscribe }) => (
             course={course} 
             isSubscribed={true}
             onUnsubscribe={onUnsubscribe}
-            onSubscribe={() => {}}
           />
         ))}
       </div>
