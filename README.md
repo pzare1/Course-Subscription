@@ -1,3 +1,32 @@
+
+## Running the Course Hub Application
+
+### Backend Setup
+
+1. Open a terminal and navigate to the project's root directory.
+
+2. Set up and running the backend:
+
+    create .env in the /api root directory.
+
+   ```bash
+
+    cd api
+    npm install
+    node server.js
+
+   ```
+3. Set up and running the frontend:
+
+   ```bash
+
+    cd ui
+    npm install
+    npm start
+
+   ```
+### For security the environment variables are not added to the repository and .env will send by email separately.
+
 # Course Hub
 
 Welcome to the **Course Subscription Application**! This boilerplate application is designed to help you get started with building a simple course subscription application on the ServiceNow platform. It provides the foundational data model and basic configurations, allowing you to focus on implementing the required features and enhancing the application.
