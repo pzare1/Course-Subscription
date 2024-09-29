@@ -25,7 +25,11 @@
     npm start
 
    ```
-### For security the environment variables are not added to the repository and .env will send by email separately.
+#### For security reasons, environment variables are not included in the repository. The .env file will be shared separately via secure email.
+
+### Preview
+
+![Preview](public/screen.png)
 
 # Course Hub
 
