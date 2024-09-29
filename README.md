@@ -29,7 +29,7 @@
 
 ### Preview
 
-![Preview](public/screen.png)
+![Preview](ui/public/screen.png)
 
 # Course Hub
 
