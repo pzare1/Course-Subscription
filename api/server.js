@@ -53,7 +53,8 @@ app.get('/api/subscriptions', async (req, res) => {
 app.post('/api/subscribe', async (req, res) => {
   const { courseId } = req.body;
   try {
-    const subscriptionDate = new Date().toISOString();
+    const dateResponse = await serviceNowAxios.get('/api/now/ui/date_time');
+    const subscriptionDate = dateResponse.data.result.date_time;    
     await serviceNowAxios.post('/api/now/table/x_quo_coursehub_course_subscription', {
       learner: "Pouya Zare",
       course: courseId,
